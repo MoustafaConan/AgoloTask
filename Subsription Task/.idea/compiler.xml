@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="FixedSolutionTask" />
+        <module name="Subsription Task" />
         <module name="SelenuimTask" />
         <module name="ExpandCartTasks" />
         <module name="taskSelenuim" />

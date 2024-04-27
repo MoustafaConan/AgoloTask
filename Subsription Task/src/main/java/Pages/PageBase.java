@@ -11,7 +11,7 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PageBase {
+public class PageBase  {
 	
 	public int timeOut = 30;
 
@@ -92,5 +92,5 @@ public class PageBase {
 	}
 
 
-	
+
 }

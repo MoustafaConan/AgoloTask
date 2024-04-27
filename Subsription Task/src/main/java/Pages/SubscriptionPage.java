@@ -6,23 +6,10 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class SubscriptionPage {
-    private WebDriver driver;
+public interface SubscriptionPage {
 
-    public SubscriptionPage(WebDriver driver) {
-        this.driver = driver;
-    }
+    public String getPackageName();
+    public String getPrice();
+    public String getCurrency();
 
-    public List<WebElement> getSubscriptionPackages() {
-        return driver.findElements(By.className("plan-names"));
-    }
-
-    public String getPackageName(WebElement packageElement) {
-        return packageElement.findElement(By.className("plan-title")).getText().trim();
-    }
-
-    public String getTypeAndPrice(WebElement packageElement) {
-        WebElement infoFlag = packageElement.findElement(By.className("info-flag"));
-        return (infoFlag != null) ? infoFlag.getText().trim() : "Not available";
-    }
 }
